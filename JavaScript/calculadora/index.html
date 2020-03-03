@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+</head>
+
+
+<body>
+
+  <div class="row">
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-0">0</button>
+    </div>
+     
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-1">1</button>
+      </div>
+
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-2">2</button>
+      </div>
+
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-3">3</button>
+      </div>
+
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-4">4</button>
+      </div>
+
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-5">5</button>
+      </div>
+
+    <div class="col-md-3">
+      <button class="btn btn-primary" id="btn-6">6</button>
+      </div>
+
+    <div class="col-md-3">
+    <button class="btn btn-primary" id="btn-7">7</button>
+    </div>
+
+    <div class="col-md-3">
+    <button class="btn btn-primary" id="btn-8">8</button>
+    </div>
+
+    <div class="col-md-3">
+    <button class="btn btn-primary" id="btn-9">9</button>
+    </div>
+
+    <div class="col-md-3">
+    <button class="btn btn-primary btn-lg" id="btn-mult">x</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>JQuery</h1>
+            <input type="text" class="fomr-control" id="texto1" />
+             <button id="btn1" class="btn btn-primary">Aceptar</button>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+
+        JQuery(document).ready(functio(){
+          var numero = 0;
+          var operacion = 0;
+
+
+          $("#btn-0").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "0");
+        });
+      });
+
+
+        $("#btn-1").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "1");
+        });
+      });
+
+
+      $("#btn-2").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "2");
+        });
+      });
+
+
+      $("#btn-3").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "3");
+        });
+      });
+
+
+      $("#btn-4").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "4");
+        });
+      });
+
+
+      $("#btn-5").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "5");
+        });
+      });
+
+
+      $("#btn-6").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "6");
+        });
+      });
+
+
+      $("#btn-7").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "7");
+        });
+      });
+
+
+      $("#btn-8").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "8");
+        });
+      });
+
+
+      $("#btn-9").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + "9");
+        });
+      });
+
+
+      $("#btn-punto").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          $("#resultado").val(valor + ".");
+        });
+      });
+
+
+      $("#btn-suma").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          numero = parseInt(valor);
+          operacion = 1;
+          $("#resultado").val("");
+        });
+      });
+
+
+      $("#btn-igual").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          let res = 0;
+
+          switch(operacion)
+          {
+            case 1:
+            let res = numero + parseInt(valor);
+            $("#resultado").val(res);
+            break;
+
+            case 2:
+            let res = numero - parseInt(valor);
+            $("#resultado").val(res);
+            break;
+          }
+        });
+      });
+
+
+      $("#btn-resta").click(function(event){
+          event.preventDefault();
+          let valor = $("resultado").val();
+          numero = parseInt(valor);
+          operacion = 2;
+          $("#resultado").val("");
+        });
+      });
+
+    </script>
+    
+</body>
+</html>
