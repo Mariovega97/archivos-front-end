@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <title>Ejercicios jQuery</title>
+ <link
+ rel="stylesheet"
+
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ />
+ </head>
+
+
+ <body>
+
+
+ <div class="container">
+ <div class="row mt-4">
+ <div class="col-md-12">
+ <h1>Búsqueda de películas</h1>
+ <input type="text" id="txt_buscar" class="form-control mb-2" />
+ <button id="btn_buscar" class="btn btn-primary">Buscar</button>
+ </br>
+
+ <div class="card mb-3" id="results" style="max-width: 540px;">
+        <div class="row no-gutters">
+        <div class="col-md-4">
+        <img id="poster-img" src="" class="card-img" alt="" />
+        </div>
+ </div>
+ </div>
+ </div>
+
+
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.min.js"
+ crossorigin="anonymous"
+ ></script>
+ <script
+
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+ crossorigin="anonymous"
+ ></script>
+
+
+ <script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+ crossorigin="anonymous"
+ ></script>
+
+
+ <script>
+ jQuery(document).ready(function() {
+ var api_key = "4e006744";
+ $("#btn_buscar").click(function() {
+ $.get(
+ "http://www.omdbapi.com",
+ {
+ apikey: api_key,
+ r: "json",
+ s: $("#txt_buscar").val()
+ },
+ function(data, status) {
+ console.log(data);
+
+ var peliculas = "";
+for(ind=0; ind< data.Search.length; ind++){
+    peliculas += "<h2>" + data.Search[ind].Title +"</h2>";
+    peliculas += "<h3>" + data.Search[ind].Year +"</h3>"; 
+    peliculas += '<img src="' + data.Search[ind].Poster +'">"';
+            
+    $("#results").html(peliculas); 
+ }
+ }
+ );
+ });
+ });
+
+ var titulo = "";
+ var year = "";
+ var imdb = "";
+ var poster = "";
+ var resultado = "";
+
+ for (var num = 0; num < data.Search.length; num++){
+        titulo = data.Search[num].Title;
+        year = data.Search[num].Year;
+        imdb = data.Search[num].imdbID;
+        poster = data.Search[num].Poster;
+ }
+
+
+ </script>
+ </body>
+</html>
