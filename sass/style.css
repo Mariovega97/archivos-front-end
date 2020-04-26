@@ -1,0 +1,36 @@
+.inicios {
+  background: red;
+  text-align: center;
+}
+
+.servicios {
+  background: yellow;
+  text-align: center;
+}
+
+.nosotros {
+  background: green;
+  text-align: center;
+}
+
+.contacto {
+  background: brown;
+  text-align: center;
+}
+
+button {
+  background: cyan;
+}
+
+button:hover {
+  background: darkorchid;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-family: 'Righteous', cursive;
+}
+/*# sourceMappingURL=style.css.map */
