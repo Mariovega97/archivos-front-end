@@ -1,0 +1,157 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1  {
+    font-weight: 700;
+}
+
+
+.header{
+    background-image: url("img/seccion1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1443px;
+}
+
+
+#navbarNav ul li a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.fondo-menu{
+    background: rgba(255, 127, 127, 0.6);
+}
+
+
+.h-blanco{
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.h-rosa {
+    text-transform: uppercase;
+    color: #ff2f2f;
+}
+
+
+.p-blanco{
+    color: white;
+}
+
+
+.btn-blanco{
+    padding: 10px 40px;
+    background: white;
+    color: #ff2f2f;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.btn-blanco:hover{
+    text-decoration: none;
+    color: #ff2f2f;
+}
+
+
+.espacio-seccion1{
+    margin-top: 70px;
+}
+
+
+.seccion2{
+    background: #ff7f7f;
+    color: white;
+}
+
+
+.img-sushi2{
+    margin-top: -55px;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+}
+
+@media (min-width: 768px){
+    .header{
+        height: 800px;
+    }
+}
+
+@media (min-width: 992px){
+}
+
+@media (min-width: 992px){
+    .header{
+        height: 800px;
+    }
+}
+
+@media (min-width: 1024px){
+    .header{
+        height: 1000px;
+    }
+}
+
+@media (min-width: 1200px){
+    .header{
+        height: 1000px;
+    }
+}
+
+@media (min-width: 1400px){
+    .header{
+        height: 1300px;
+    }
+}
+
+@media (min-width: 1700px){
+    .header{
+        height: 1600px;
+    }
+}
+
+@media (min-width: 1600px){
+}
+
+@media (max-width: 1400pxpx){
+}
+
+/* Large devices (desktops lees than 1200px)*/
+@media (max-width: 1199.98px){
+}
+
+/* Medium*/
+@media (max-width: 991.98px){
+}
+
+/* Small*/
+@media (max-width: 767.98px){
+    .header{
+        height: 600px;
+    }
+}
+
+/* Extra small*/
+@media (max-width: 575.98px){
+    .header{
+        height: 600px;
+    }
+
+    .img-sushi1{
+        display: none;
+     }
+
+    .img-sushi2{
+       display: none;
+    }
+}
