@@ -5,6 +5,7 @@ body{
 
 h1, h4{
     font-family: 'Oxanium';
+    text-align: center;
 }
 
 
@@ -15,8 +16,9 @@ h1, h4{
     padding: 10px 5px;
     border: 1px solid #000000;
     color: #000000;
-    background: #c3c3c3;
-    }
+    background: #c3c3c3;    
+    margin-left: 600px;
+}
     
     
 .boton.verde {
