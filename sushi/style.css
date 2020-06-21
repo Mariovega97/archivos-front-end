@@ -245,6 +245,26 @@ h1  {
 }
 
 
+.img-sushi-footer{
+    margin-top: -200;
+    padding-right: 100px;
+}
+
+
+.icono-social{
+    background: white;
+    color: black;
+    border-radius: 100%;
+    padding: 10px 10px;
+}
+
+
+.icono-social:hover {
+    color: black;
+}
+
+
+
 
 
 /* Small devices (landscape phones, 576px and up)*/
